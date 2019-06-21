@@ -8,11 +8,22 @@
 .header {
   background-color: #5488B5;
   color: #fff;
-  padding: 20px 10px;
+  padding: 30px 0px 20px;
   margin-bottom: 30px;
   border-bottom: 2px solid #2a2928;
-  height: 90px
+  height: 120px
 }
 .header-right {
    float: right;
+ }
+ .header h1 {
+   float: left;
+   text-decoration: underline;
+   font-weight: bold;
+   font-family: georgia;
+   font-style: italic;
+ }
+ img {
+   height: auto;
+   width: 120px;
  }
