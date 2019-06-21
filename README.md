@@ -10,10 +10,19 @@
 #####
 
 #### Specs:
-####Allow the user to choose toppings and size for the pizza they'd like to order.
-####Create a pizza object constructor with properties for toppings and size.
-####Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this. do that."
+#### Allow the user to choose toppings and size for the pizza they'd like to order.
+#### Create a pizza object constructor with properties for toppings and size.
+#### Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this. do that."
 #### These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program,
+
+
+## -------------_input_--------------|-----------_output_----------------
+
+## 10inch pizza-------------------|----------------cost: 10$
+## 16inch pizza-------------------|----------------cost: 10$
+## 18inch pizza-------------------|----------------cost: 12$
+## Add a toppin-------------------|----------------cost = cost + 1$
+## --------------------------------------------------------------------------------
 
 ####
 

@@ -49,11 +49,11 @@ function calculatePrice(pizza) {
   }
 }
 function displayPurchase(pizza) {
-  $("#size").append(pizza.size + "inch Pizza")
+  $("#size").text(pizza.size + "inch Pizza")
   for (var i = 0; i < pizza.toppings.length; i++) {
-    $("#toppings").append(pizza.toppings[i] + ", ")
+    $("#toppings").text(pizza.toppings[i] + ", ")
   }
-  $("#price").append('costing: ' + pizza.price + '$')
+  $("#price").text('costing: ' + pizza.price + '$')
 
 }
 
@@ -78,6 +78,7 @@ $(document).ready(function(){
         calculatePrice(newPizza);
         displayPurchase(newPizza);
         console.log(newPizza.toppings);
+        $('#output').hide();
     });
   });
 });
