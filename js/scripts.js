@@ -26,8 +26,8 @@ function startPizza() {
   return pizza = New Pizza
   // will need to add to order
 }
-function addToppingChoice() {
-
+function addToppingChoice(pizza, topping) {
+  pizza.addTopping(topping)
 }
 function calculatePrice() {
 
@@ -40,6 +40,11 @@ function displayPurchase() {
 
 $(document).ready(function(){
   $('#startPizzaBtn').click(function() {
-    startPizza();
+    pizza = startPizza();
+
+  });
+  $('#addToppingaBtn').click(function(pizza) {
+    addToppingChoice(pizza, topping)
+
   });
 });
