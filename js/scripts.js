@@ -9,12 +9,12 @@ Order.prototype.addPizza = function(pizza) {
   this.pizzas.push(pizza);
 }
 // above is for ordering multiple pizzas. worry about that last.
-// function Pizza(size) {
-//   this.size = size;
-//   this.toppings = [];
-//   this.price = 10;
-//
-// }
+function Pizza(size) {
+  this.size = size;
+  this.toppings = [];
+  this.price = 10;
+
+}
 
 function Topping() {
   this.name = name;
@@ -44,7 +44,12 @@ function calculatePrice(pizza) {
     pizza.price += 1;
   }
 }
-function displayPurchase() {
+function displayPurchase(pizza) {
+  $("#size").append(pizza.size + "inch Pizza")
+  for (var i = 0; i < pizza.toppings.length; i++) {
+    $("#toppings").append(pizza.topping + ", ")
+  }
+  $("#price").append('costing: ' + pizza.price + '$')
 
 }
 
