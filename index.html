@@ -8,7 +8,7 @@
   <title>Ordering Pizza</title>
 </head>
 <body>
-  <div class="header">
+  <div class="header bg-info">
     <h1>Pizza Schmoe's!</h1>
     <div class="header-right">
       <img src="img/pizza.png">
@@ -21,9 +21,9 @@
         <div class="card" style="width: 34rem;">
           <img class="card-img-top" src="img/make-pizza.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
-            <a href="#" class="btn btn-primary">More Info</a>
+            <h5 class="card-title">Woodfire Pizza just a click away!</h5>
+            <p class="card-text">If you're ready to place your order, click the button below.</p>
+            <button id="startOrder" class="btn btn-primary">Order</button>
           </div>
         </div>
       </div>
@@ -39,41 +39,41 @@
       </div>
     </div>
     <hr>
-    <h1>Best pizza in the great Northwest</h1>
-    <hr>
-    <div class="card">
-      <h5 class="card-header">Welcome!</h5>
-      <div class="card-body">
-        <h5 class="card-title">Let's make a pizza.</h5>
-        <p class="card-text">Please choose the size that you want below</p>
-        <form class="sizeForm">
-          <select>
-            <option value="10">10 inches</option>
-            <option value="16">16 inches</option>
-            <option value="18" selected>18 inches</option>
-            <option value="22">22 inches</option>
-          </select>
-          <hr>
-          <button id="startPizzaBtn" type="button" name="button">Start Pizza Here</button>
-        </form>
-        <!-- <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Action
-      </button>
-      <div class="dropdown-menu">
-      <option class="dropdown-item" href="#">Action</option>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div> -->
+    <div class="hiddenBody">
+
+      <div class="card">
+        <h5 class="card-header bg-info">Welcome!</h5>
+        <div class="card-body">
+          <h5 class="card-title">Let's make a pizza.</h5>
+          <p class="card-text">Please choose the size that you want below</p>
+          <form class="sizeForm">
+            <select>
+              <option value="10">10 inches</option>
+              <option value="16">16 inches</option>
+              <option value="18" selected>18 inches</option>
+              <option value="22">22 inches</option>
+            </select>
+            <hr>
+            <button id="startPizzaBtn" type="button" name="button">Start Pizza Here</button>
+          </form>
+          <!-- <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+        <option class="dropdown-item" href="#">Action</option>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div> -->
+    </div>
   </div>
-</div>
-<hr>
-<div class="card">
-  <div class="card-body">
-    <div class="toppings">
+  <hr>
+  <div class="card toppings">
+    <div class="card-body">
       <h2>Choose your toppings for 1$ each!</h2>
+      <br>
       <button class='topping' type="button" name="button" value="pepperoni">Pepperoni</button>
       <button class='hiddenTopping' id='pepperoni' type="button" name="button" value="pepperoni">Pepperoni</button>
       <button class='topping' type="button" name="button" value="extra-cheese">Extra Cheese</button>
@@ -83,21 +83,30 @@
       <button class='topping' type="button" name="button" value="sausage">Sausage</button>
       <button class='hiddenTopping' id='sausage' type="button" name="button" value="sausage">Sausage</button>
 
+    </div>
+  </div>
+  <hr>
+  <div class="center">
 
+    <button id="output" class="center" type="button" name="button">Place Order</button>
+    <div class="center">
+        <br>
+        <h2 id="size"></h2>
+        <br>
+        <h2 id="toppings"></h2>
+        <br>
+        <h2 id="price"></h2>
+        <br>
     </div>
   </div>
 </div>
-<hr><hr>
-<button id="output" type="button" name="button">Place Order</button>
-<div class="output">
-  <ul>
-    <li id="size"></li>
-    <li id="toppings"></li>
-    <li id="price"></li>
+    <h1 id="body-header">Best pizza in the great Northwest</h1>
+    <img class="center" src="img/pizza-mid-body.png">
 
-  </ul>
+    <hr>
 </div>
-
+<div class="footer bg-info">
+  <a href="#default">Pizza Schmoes inc. - Jacob Irwin-Cline</a>
 </div>
 </body>
 </html>

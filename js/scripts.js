@@ -51,7 +51,7 @@ function calculatePrice(pizza) {
 function displayPurchase(pizza) {
   $("#size").append(pizza.size + "inch Pizza")
   for (var i = 0; i < pizza.toppings.length; i++) {
-    $("#toppings").append(pizza.topping + ", ")
+    $("#toppings").append(pizza.toppings[i] + ", ")
   }
   $("#price").append('costing: ' + pizza.price + '$')
 
@@ -60,6 +60,9 @@ function displayPurchase(pizza) {
 //----------------------User Interface Logic-------------------------//
 
 $(document).ready(function(){
+  $('#startOrder').click(function() {
+    $('.hiddenBody').show();
+  });
   $('#startPizzaBtn').click(function() {
     var newPizza = startPizza();
     $('.toppings').show();
