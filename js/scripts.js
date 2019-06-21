@@ -60,8 +60,7 @@ function displayPurchase(pizza) {
 //----------------------User Interface Logic-------------------------//
 
 $(document).ready(function(){
-  $('.sizeForm').submit(function(event) {
-    event.preventDefault();
+  $('#startPizzaBtn').click(function() {
     var newPizza = startPizza();
     $('.toppings').show();
 
