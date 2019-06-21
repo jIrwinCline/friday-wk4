@@ -34,6 +34,9 @@ function startPizza(size) {
 }
 function addToppingChoice(pizza, topping) {
   pizza.addTopping(topping);
+  $("#" + topping).show();
+
+
 }
 function calculatePrice(pizza) {
   if (pizza.size > 18) {
@@ -57,11 +60,14 @@ function displayPurchase(pizza) {
 //----------------------User Interface Logic-------------------------//
 
 $(document).ready(function(){
-  $('#startPizzaBtn').click(function() {
+  $('.sizeForm').submit(function(event) {
+    event.preventDefault();
     var newPizza = startPizza();
+    $('.toppings').show();
 
     $('.topping').click(function() {
         var topping = $(this).val();
+        $(this).hide();
         addToppingChoice(newPizza, topping);
         console.log(newPizza.toppings);
     });

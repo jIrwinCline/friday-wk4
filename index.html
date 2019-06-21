@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Ordering Pizza</title>
-  </head>
-  <body>
-    <div class="container">
-      <button id="startPizzaBtn" type="button" name="button">Start Pizza Here</button>
-      <div class="toppings">
-        <button class='topping' type="button" name="button" value="Pepperoni">Pepperoni</button>
-        <button class='hiddenTopping' type="button" name="button" value="Pepperoni">Pepperoni</button>
-        <button class='topping' type="button" name="button" value="Extra Cheese">Extra Cheese</button>
-        <button class='hiddenTopping' type="button" name="button" value="Extra Cheese">Extra Cheese</button>
-        <button class='topping' type="button" name="button" value="Garlic Cloves">Garlic Cloves</button>
-        <button class='hiddenTopping' type="button" name="button" value="Garlic Cloves">Garlic Cloves</button>
-        <button class='topping' type="button" name="button" value="Sausage">Sausage</button>
-        <button class='hiddenTopping' type="button" name="button" value="Sausage">Sausage</button>
-
-
-      </div>
-      <hr><hr>
-      <button id="output" type="button" name="button">Place Order</button>
-      <div class="output">
-        <ul>
-          <li id="size"></li>
-          <li id="toppings"></li>
-          <li id="price"></li>
-
-        </ul>
-      </div>
-
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Ordering Pizza</title>
+</head>
+<body>
+  <div class="header">
+    <div class="header-right">
+      <img src="" alt="">
     </div>
-  </body>
+  </div>
+  <div class="container">
+    <div class="card">
+      <h5 class="card-header">Welcome!</h5>
+      <div class="card-body">
+        <h5 class="card-title">Let's make a pizza.</h5>
+        <p class="card-text">Please choose the size that you want below</p>
+        <form class="sizeForm">
+          <select>
+            <option value="10">10 inches</option>
+            <option value="16">16 inches</option>
+            <option value="18">18 inches</option>
+            <option value="22">22 inches</option>
+          </select>
+          <hr>
+          <input id="startPizzaBtn" type="submit" name="button">Start Pizza Here</input>
+        </form>
+        <!-- <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu">
+      <option class="dropdown-item" href="#">Action</option>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div> -->
+  </div>
+</div>
+<div class="toppings">
+  <h2>Choose your toppings for 1$ each!</h2>
+  <button class='topping' type="button" name="button" value="pepperoni">Pepperoni</button>
+  <button class='hiddenTopping' id='pepperoni' type="button" name="button" value="pepperoni">Pepperoni</button>
+  <button class='topping' type="button" name="button" value="extra-cheese">Extra Cheese</button>
+  <button class='hiddenTopping' id='extra-cheese' type="button" name="button" value="extra-cheese">Extra Cheese</button>
+  <button class='topping' type="button" name="button" value="garlic-cloves">Garlic Cloves</button>
+  <button class='hiddenTopping' id='garlic-cloves' type="button" name="button" value="garlic-cloves">Garlic Cloves</button>
+  <button class='topping' type="button" name="button" value="sausage">Sausage</button>
+  <button class='hiddenTopping' id='sausage' type="button" name="button" value="sausage">Sausage</button>
+
+
+</div>
+<hr><hr>
+<button id="output" type="button" name="button">Place Order</button>
+<div class="output">
+  <ul>
+    <li id="size"></li>
+    <li id="toppings"></li>
+    <li id="price"></li>
+
+  </ul>
+</div>
+
+</div>
+</body>
 </html>

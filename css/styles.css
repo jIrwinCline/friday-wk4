@@ -1,3 +1,18 @@
 .hiddenTopping {
+  display: none;
   background: grey;
 }
+.toppings {
+  display: none;
+}
+.header {
+  background-color: #5488B5;
+  color: #fff;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #2a2928;
+  height: 90px
+}
+.header-right {
+   float: right;
+ }
