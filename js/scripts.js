@@ -9,8 +9,10 @@ Order.prototype.addPizza = function(pizza) {
   this.pizzas.push(pizza);
 }
 // above is for ordering multiple pizzas. worry about that last.
+//---------------------------------------------------------------
+//constructors
 function Pizza(size) {
-  this.size = size;
+  this.size = 18; //change to dynamic
   this.toppings = [];
   this.price = 10;
 
@@ -30,8 +32,7 @@ function startPizza(size) {
   return pizza
   // will need to add to order
 }
-function addToppingChoice(topping) {
-  var pizza = new Pizza(18);//delete
+function addToppingChoice(pizza, topping) {
   pizza.addTopping(topping);
 }
 function calculatePrice(pizza) {
@@ -56,12 +57,19 @@ function displayPurchase(pizza) {
 //----------------------User Interface Logic-------------------------//
 
 $(document).ready(function(){
-
   $('#startPizzaBtn').click(function() {
     var newPizza = startPizza();
-    $('button').click(function(newPizza) {
-      addToppingChoice(newPizza, "peporoni");
-      console.log("here");
+
+    $('.topping').click(function() {
+        var topping = $(this).val();
+        addToppingChoice(newPizza, topping);
+        console.log(newPizza.toppings);
+    });
+
+    $('#output').click(function() {
+        calculatePrice(newPizza);
+        displayPurchase(newPizza);
+        console.log(newPizza.toppings);
     });
   });
 });
