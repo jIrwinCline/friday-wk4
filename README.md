@@ -21,7 +21,7 @@
 ## 10inch pizza-------------------|----------------cost: 10$
 ## 16inch pizza-------------------|----------------cost: 10$
 ## 18inch pizza-------------------|----------------cost: 12$
-## Add a toppin-------------------|----------------cost = cost + 1$
+## Add a topping-------------------|----------------cost = cost + 1$
 ## --------------------------------------------------------------------------------
 
 ####
@@ -31,8 +31,10 @@
 
 * To Use:
 * Simply open index.html in a web browser
-*                                                                                         
-*                                                                                         
+* click order to order a pizza                                                                                        
+* use the drop down menu to choose size of pizzas
+* choose toppings by clicking on them
+* submit and review your order                                                                                
 
 
 
@@ -54,4 +56,4 @@ Basic HTML, CSS/bootstrap, and JavaScript/jQuery were used to create this webpag
 
 #### copyright ####
 
-Copyright (c) 2016 Jacob Irwin-Cline
+Copyright (c) 2019 Jacob Irwin-Cline
