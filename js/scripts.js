@@ -51,7 +51,7 @@ function calculatePrice(pizza) {
 function displayPurchase(pizza) {
   $("#size").text(pizza.size + "inch Pizza")
   for (var i = 0; i < pizza.toppings.length; i++) {
-    $("#toppings").text(pizza.toppings[i] + ", ")
+    $("#toppings").append(pizza.toppings[i] + ", ")
   }
   $("#price").text('costing: ' + pizza.price + '$')
 
