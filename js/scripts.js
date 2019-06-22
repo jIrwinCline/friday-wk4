@@ -12,7 +12,7 @@ Order.prototype.addPizza = function(pizza) {
 //---------------------------------------------------------------
 //constructors
 function Pizza(size) {
-  this.size = 18; //change to dynamic
+  this.size = size;
   this.toppings = [];
   this.price = 10;
 
@@ -64,7 +64,7 @@ $(document).ready(function(){
     $('.hiddenBody').show();
   });
   $('#startPizzaBtn').click(function() {
-    var newPizza = startPizza();
+    var newPizza = startPizza($('#sizeVal').val());
     $('.toppings').show();
 
     $('.topping').click(function() {
